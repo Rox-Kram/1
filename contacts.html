@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты | Мото Сервис Тамбов</title>
+    <link rel="stylesheet" href="style.css">
+    
+
+    <style>
+        .contact-layout {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+        @media (max-width: 768px) {
+            .contact-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 15px;
+            margin-bottom: 20px;
+            background-color: #2a2a2a;
+            border: 1px solid #444;
+            color: #fff;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .contact-form input:focus, .contact-form textarea:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+        .contact-form button {
+            background-color: var(--primary-color);
+            color: #fff;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 16px;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+        .contact-form button:hover {
+            background-color: #e65c00;
+        }
+        .contact-details p {
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+        }
+        .map-placeholder {
+            width: 100%;
+            height: 300px;
+            background-color: #333;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            border-radius: 10px;
+            margin-top: 15px;
+            border: 1px dashed #666;
+        }
+    </style>
+</head>
+<body>
+
+
+    <header>
+        <div class="container header-container">
+            <a href="index.html" class="logo">MOTO<span>68</span></a>
+            <nav>
+                <ul class="main-menu">
+                    <li class="dropdown">
+                        <a href="service.html">Услуги ▼</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="service.html">Техническое обслуживание</a></li>
+                            <li><a href="service.html">Ремонт двигателя</a></li>
+                            <li><a href="service.html">Шиномонтаж и балансировка</a></li>
+                            <li><a href="service.html">Диагностика электрики</a></li>
+                            <li><a href="service.html">Зимнее хранение</a></li>
+                            <li><a href="service.html">Тюнинг и кастомизация</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="products.html">Товары</a></li>
+                    <li><a href="discounts.html">Скидки</a></li>
+                    <li><a href="season.html">Сезонные предложения</a></li>
+                    <li><a href="contacts.html" style="color: var(--primary-color);">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+     <section class="section">
+            <div class="container">
+                <h1>Наши контакты</h1>
+                <p>Мы всегда на связи! Приезжайте в любой из наших филиалов в Тамбове, звоните для записи на ремонт или задавайте вопросы через форму обратной связи ниже.</p>
+            </div>
+        </section>
+
+
+        <section class="section bg-dark">
+            <div class="container">
+                <h2>Ждем вас в гости</h2>
+                <div class="grid-container">
+
+                    <div class="card" style="text-align: left;">
+                        <h3>Северный филиал</h3>
+                        <p>📍 <strong>Адрес:</strong> г. Тамбов, ул. Мичуринская, д. 150 (ГСК "Мотор", боксы 45-48)</p>
+                        <p>🕒 <strong>Режим работы:</strong> Пн-Сб: 10:00 - 20:00, Вс: Выходной</p>
+                        <p>📞 <strong>Телефон:</strong> +7 (4752) 11-11-11</p>
+                    </div>
+
+
+                    <div class="card" style="text-align: left;">
+                        <h3>Южный филиал (Магазин + Сервис)</h3>
+                        <p>📍 <strong>Адрес:</strong> г. Тамбов, ул. Советская, д. 190</p>
+                        <p>🕒 <strong>Режим работы:</strong> Ежедневно: 09:00 - 21:00</p>
+                        <p>📞 <strong>Телефон:</strong> +7 (4752) 22-22-22</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section">
+            <div class="container contact-layout">
+
+                <div class="contact-form">
+                    <h3 style="color: var(--primary-color);">Остались вопросы?</h3>
+                    <p style="margin-bottom: 20px;">Оставьте заявку, и наш мастер перезвонит вам в течение 15 минут для консультации.</p>
+                    <form action="#" method="POST">
+                        <input type="text" name="name" placeholder="Ваше имя" required>
+                        <input type="tel" name="phone" placeholder="Ваш телефон" required>
+                        <textarea name="message" rows="4" placeholder="Кратко опишите проблему или вопрос (марка мотоцикла)"></textarea>
+                        <button type="submit">Отправить заявку</button>
+                    </form>
+                </div>
+
+
+                <div class="contact-details">
+                    <h3 style="color: var(--primary-color);">Связь с нами</h3>
+                    <p>✉️ <strong>Email:</strong> info@moto68-tambov.ru</p>
+                    <p>📱 <strong>Max:</strong> +7 (900) 000-00-00</p>
+                    
+                    <h4 style="margin-top: 30px;">Социальные сети:</h4>
+                    <p>Следите за нашими проектами, новостями и акциями!</p>
+                    <ul style="list-style: none; display: flex; gap: 15px; margin-top: 15px;">
+                        <li><a href="#" style="background: #2a2a2a; padding: 10px 20px; border-radius: 5px; border-bottom: 2px solid var(--primary-color);">VKontakte</a></li>
+                        <li><a href="#" style="background: #2a2a2a; padding: 10px 20px; border-radius: 5px; border-bottom: 2px solid var(--primary-color);">Telegram</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="container footer-container">
+            <div class="footer-col">
+                <h4>Навигация</h4>
+                <ul>
+                    <li><a href="service.html">Услуги</a></li>
+                    <li><a href="products.html">Товары</a></li>
+                    <li><a href="discounts.html">Скидки</a></li>
+                    <li><a href="season.html">Сезонные предложения</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h4>Мы в соцсетях</h4>
+                <ul>
+                    <li><a href="#">ВКонтакте</a></li>
+                    <li><a href="#">Telegram</a></li>
+                    <li><a href="#">YouTube</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col contacts-col">
+                <h4>Горячая линия</h4>
+                <a href="tel:+74752000000" class="phone-number">+7 (4752) 00-00-00</a>
+                <p>Звоните, мы на связи!</p>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            &copy; 2023-2024 Мото Сервис Тамбов. Все права защищены.
+        </div>
+    </footer>
+
+</body>
+</html>
